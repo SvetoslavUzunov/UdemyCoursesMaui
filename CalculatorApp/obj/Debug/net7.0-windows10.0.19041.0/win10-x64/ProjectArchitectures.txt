@@ -1,0 +1,1 @@
+C:\Users\SvetoslavUzunov\Documents\UdemyCourses\CalculatorApp\CalculatorApp.csproj;x64
