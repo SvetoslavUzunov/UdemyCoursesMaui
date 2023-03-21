@@ -24,7 +24,8 @@
       </Grid>
 
       <VerticalStackLayout Grid.Row="1"
-							 Style="{StaticResource MainStackLayout}">
+							      Style="{StaticResource MainStackLayout}"
+                           IsVisible="{Binding IsVisible}">
          <Label Text="{Binding PlaceName}"
 				   Style="{StaticResource Title}"/>
 
@@ -36,7 +37,8 @@
 						   Source="{Binding WeatherData.current_weather.weathercode, Converter={StaticResource CodeToLottieConverter}}"/>
 
       <Grid Grid.Row="3"
-			   ColumnDefinitions="*, *, *">
+			   ColumnDefinitions="*, *, *"
+            IsVisible="{Binding IsVisible}">
          <VerticalStackLayout HorizontalOptions="Center"
 								 Spacing="10">
             <Label Text="Temp"
@@ -69,16 +71,9 @@
          </VerticalStackLayout>
       </Grid>
 
-      <CollectionView Grid.Row="4">
-         <CollectionView.ItemsSource>
-            <x:Array Type="{x:Type x:String}">
-               <x:String>1</x:String>
-               <x:String>2</x:String>
-               <x:String>3</x:String>
-               <x:String>4</x:String>
-               <x:String>5</x:String>
-            </x:Array>
-         </CollectionView.ItemsSource>
+      <CollectionView Grid.Row="4"
+                      ItemsSource="{Binding WeatherData.daily2}">
+
          <CollectionView.ItemsLayout>
             <LinearItemsLayout ItemSpacing="10"
 										 Orientation="Horizontal"/>
@@ -92,16 +87,27 @@
                      <skia:SKLottieView IsAnimationEnabled="False"
                                         HeightRequest="50"
                                         WidthRequest="50"
-                                        Source="mist.json"/>
-                     <Label Text="08-02-2050"
+                                        Source="{Binding weathercode, Converter={StaticResource CodeToLottieConverter}}"/>
+
+                     <Label Text="{Binding time}"
                             TextColor="{StaticResource Yellow100Accent}"/>
 
-                     <Label Text="50°C"/>
-                     <Label Text="Sunny"/>
+                     <Label Text="{Binding temperature_2m_max, StringFormat='{0}°C'}"/>
+                     
+                     <Label Text="{Binding weathercode, Converter={StaticResource CodeToWeatherConverter}}"/>
                   </VerticalStackLayout>
                </Frame>
             </DataTemplate>
          </CollectionView.ItemTemplate>
       </CollectionView>
+      <Grid Grid.RowSpan="5"
+            Margin="-15"
+            BackgroundColor="Black"
+            Opacity="90"
+            IsVisible="{Binding IsLoading}">
+
+         <ActivityIndicator IsRunning="True"
+                            VerticalOptions="Center"/>
+      </Grid>
    </Grid>
 </ContentPage>
