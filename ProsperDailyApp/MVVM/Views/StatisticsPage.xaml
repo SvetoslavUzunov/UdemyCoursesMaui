@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             x:Class="ProsperDailyApp.MVVM.Views.StatisticsPage"
+             Title="StatisticsPage">
+
+   <Grid RowDefinitions=".15*, .15*, .30*, .40*">
+      <RoundRectangle Grid.RowSpan="2"
+                      StyleClass="TopRectangle"/>
+
+      <VerticalStackLayout StyleClass="Header">
+         <Label StyleClass="HeaderSubTitle"
+                Text="Statistics"/>
+      </VerticalStackLayout>
+
+      <Grid Grid.Row="1"
+            Grid.RowSpan="2"
+            StyleClass="BalanceGrid">
+
+         <RoundRectangle StyleClass="BalanceRectangle"/>
+
+         <Chart:SfCartesianChart Margin="5,5,20,5">
+            <Chart:SfCartesianChart.XAxes>
+               <Chart:CategoryAxis/>
+            </Chart:SfCartesianChart.XAxes>
+
+            <Chart:SfCartesianChart.YAxes>
+               <Chart:NumericalAxis/>
+            </Chart:SfCartesianChart.YAxes>
+
+            <Chart:SplineSeries/>
+            <Chart:SplineSeries/>
+         </Chart:SfCartesianChart>
+      </Grid>
+
+      <Grid Grid.Row="3"
+            RowDefinitions=".10*, .90*"
+            StyleClass="Margin15">
+
+         <Label Text="Top Spending"/>
+         <CollectionView Grid.Row="1"
+                         EmptyView="No Data">
+            <CollectionView.ItemsLayout>
+               <LinearItemsLayout ItemSpacing="15"
+                                  Orientation="Vertical"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.EmptyViewTemplate>
+               <DataTemplate>
+                  <Grid>
+                     <Label StyleClass="NoDataText"
+                            Text="No data found, click on the + button to add a new transaction"/>
+                  </Grid>
+               </DataTemplate>
+            </CollectionView.EmptyViewTemplate>
+            <CollectionView.ItemsSource>
+               <x:Array Type="{x:Type x:String}">
+                  <x:String>mono</x:String>
+                  <x:String>monodroid</x:String>
+                  <x:String>monotouch</x:String>
+                  <x:String>monorail</x:String>
+                  <x:String>monodevelop</x:String>
+                  <x:String>monotone</x:String>
+                  <x:String>monotonepoly</x:String>
+                  <x:String>monomodal</x:String>
+                  <x:String>mononucleosis</x:String>
+               </x:Array>
+            </CollectionView.ItemsSource>
+
+            <CollectionView.ItemTemplate>
+               <DataTemplate>
+                  <Grid RowDefinitions="*,*"
+                        ColumnDefinitions="*,*">
+
+                     <Label Text="Transaction"
+                            StyleClass="StrongMediumTitle"/>
+
+                     <Label Grid.Row="1"
+                            StyleClass="SmallFont"
+                            Text="Today"/>
+
+                     <Label Grid.RowSpan="2"
+                            Grid.Column="1"
+                            StyleClass="ListAmount"
+                            Text="+ $550.00"/>
+                  </Grid>
+               </DataTemplate>
+            </CollectionView.ItemTemplate>
+         </CollectionView>
+      </Grid>
+   </Grid>
+</ContentPage>

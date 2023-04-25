@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProsperDailyApp
+build_property.ProjectDir = C:\Users\SvetoslavUzunov\Documents\GitHub\UdemyCoursesMaui\ProsperDailyApp\
+
+[C:/Users/SvetoslavUzunov/Documents/GitHub/UdemyCoursesMaui/ProsperDailyApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProsperDailyApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/SvetoslavUzunov/Documents/GitHub/UdemyCoursesMaui/ProsperDailyApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProsperDailyApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/SvetoslavUzunov/Documents/GitHub/UdemyCoursesMaui/ProsperDailyApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProsperDailyApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/SvetoslavUzunov/Documents/GitHub/UdemyCoursesMaui/ProsperDailyApp/MVVM/Views/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProsperDailyApp.MVVM.Views.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\DashboardPage.xaml
+
+[C:/Users/SvetoslavUzunov/Documents/GitHub/UdemyCoursesMaui/ProsperDailyApp/MVVM/Views/StatisticsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProsperDailyApp.MVVM.Views.StatisticsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\StatisticsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\StatisticsPage.xaml
+
+[C:/Users/SvetoslavUzunov/Documents/GitHub/UdemyCoursesMaui/ProsperDailyApp/MVVM/Views/TransactionsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProsperDailyApp.MVVM.Views.TransactionsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MVVM\Views\TransactionsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MVVM\Views\TransactionsPage.xaml
+
+[C:/Users/SvetoslavUzunov/Documents/GitHub/UdemyCoursesMaui/ProsperDailyApp/Resources/Styles/AppStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProsperDailyApp.Resources.Styles.AppStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\AppStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\AppStyles.xaml
+
+[C:/Users/SvetoslavUzunov/Documents/GitHub/UdemyCoursesMaui/ProsperDailyApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProsperDailyApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/SvetoslavUzunov/Documents/GitHub/UdemyCoursesMaui/ProsperDailyApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ProsperDailyApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
